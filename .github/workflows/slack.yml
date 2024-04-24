@@ -1,4 +1,4 @@
-name: workflow_run
+name: slack
 on:
   workflow_run:
     workflows: [熱盛]
