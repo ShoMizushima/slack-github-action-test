@@ -17,10 +17,10 @@ jobs:
         with:
           payload: |
             {
-              "author": "${{ github.event.sender.login }}",
-              "url": "${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
-              "repo_name": "${{ github.event.repository.full_name }}",
-              "status": "${{ job.status }}"
+              'author': '${{ github.event.sender.login }}',
+              'url': '${{ github.event.pull_request.html_url || github.event.head_commit.url }}',
+              'repo_name': '${{ github.event.repository.full_name }}',
+              'status': '${{ job.status }}'
             }
   on-success:
     runs-on: ubuntu-20.04
@@ -30,10 +30,10 @@ jobs:
         with:
           payload: |
             {
-              "author": "${{ github.event.sender.login }}",
-              "url": "${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
-              "repo_name": "${{ github.event.repository.full_name }}",
-              "status": "${{ job.status }}"
+              'author': '${{ github.event.sender.login }}',
+              'url': '${{ github.event.pull_request.html_url || github.event.head_commit.url }}',
+              'repo_name': '${{ github.event.repository.full_name }}',
+              'status': '${{ job.status }}'
             }
   on-failure:
     runs-on: ubuntu-20.04
@@ -43,8 +43,8 @@ jobs:
         with:
           payload: |
             {
-              "author": "${{ github.event.sender.login }}",
-              "url": "${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
-              "repo_name": "${{ github.event.repository.full_name }}",
-              "status": "${{ job.status }}"
+              'author': '${{ github.event.sender.login }}',
+              'url': '${{ github.event.pull_request.html_url || github.event.head_commit.url }}',
+              'repo_name': '${{ github.event.repository.full_name }}',
+              'status': '${{ job.status }}'
             }
